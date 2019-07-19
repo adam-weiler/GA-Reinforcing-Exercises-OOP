@@ -6,22 +6,15 @@ class TodoList():
         self.task_list.append(task)
         return task
         
-
 class Task():
     def __init__(self, description, due_date):
         self.description = description
         self.due_date = due_date
 
-
 todo_list = TodoList()
 exercise = Task('Exercise', 'Today')
 taxes = Task('File your taxes', 'April')
 shopping = Task('Go shopping', 'Sunday')
-
-# print(f'{exercise.description} - {exercise.due_date}')
-# print(f'{taxes.description} - {taxes.due_date}')
-# print(f'{shopping.description} - {shopping.due_date}')
-# print()
 
 todo_list.add_task(exercise)
 todo_list.add_task(taxes)
